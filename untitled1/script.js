@@ -116,7 +116,7 @@ function weatherForCity(city) {
         })
         .then(data => {
             const currentWeather = data.current_weather;
-            const humidityValue = data.hourly.relative_humidity_2m[0]; // Pobieramy wilgotność w pierwszej godzinie
+            const humidityValue = data.hourly.relative_humidity_2m[0];
             return {
                 name: city.name,
                 temperature: currentWeather.temperature,
