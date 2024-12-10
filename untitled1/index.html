@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <select name="city" class="search-bar">
+            <option value="none" disabled selected>Wyszukaj lokalizację</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Łódź">Łódź</option>
+            <option value="Wrocław">Wrocław</option>
+            <option value="Poznań">Poznań</option>
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Szczecin">Szczecin</option>
+            <option value="Bydgoszcz">Bydgoszcz</option>
+            <option value="Lublin">Lublin</option>
+            <option value="Katowice">Katowice</option>
+            <option value="Białystok">Białystok</option>
+            <option value="Gdynia">Gdynia</option>
+            <option value="Częstochowa">Częstochowa</option>
+            <option value="Radom">Radom</option>
+            <option value="Sosnowiec">Sosnowiec</option>
+            <option value="Toruń">Toruń</option>
+            <option value="Kielce">Kielce</option>
+            <option value="Gliwice">Gliwice</option>
+            <option value="Zabrze">Zabrze</option>
+            <option value="Olsztyn">Olsztyn</option>
+            <option value="Rzeszów">Rzeszów</option>
+            <option value="Ruda Śląska">Ruda Śląska</option>
+            <option value="Bielsko-Biała">Bielsko-Biała</option>
+            <option value="Bytom">Bytom</option>
+            <option value="Zielona Góra">Zielona Góra</option>
+            <option value="Opole">Opole</option>
+            <option value="Tychy">Tychy</option>
+            <option value="Gorzów Wielkopolski">Gorzów Wielkopolski</option>
+            <option value="Dąbrowa Górnicza">Dąbrowa Górnicza</option>
+            <option value="Elbląg">Elbląg</option>
+            <option value="Płock">Płock</option>
+            <option value="Wałbrzych">Wałbrzych</option>
+            <option value="Włocławek">Włocławek</option>
+            <option value="Tarnów">Tarnów</option>
+            <option value="Chorzów">Chorzów</option>
+            <option value="Koszalin">Koszalin</option>
+            <option value="Kalisz">Kalisz</option>
+            <option value="Legnica">Legnica</option>
+            <option value="Grudziądz">Grudziądz</option>
+            <option value="Słupsk">Słupsk</option>
+            <option value="Jaworzno">Jaworzno</option>
+            <option value="Jastrzębie-Zdrój">Jastrzębie-Zdrój</option>
+            <option value="Nowy Sącz">Nowy Sącz</option>
+            <option value="Jelenia Góra">Jelenia Góra</option>
+            <option value="Konin">Konin</option>
+            <option value="Piotrków Trybunalski">Piotrków Trybunalski</option>
+            <option value="Inowrocław">Inowrocław</option>
+            <option value="Lubin">Lubin</option>
+            <option value="Gniezno">Gniezno</option>
+            <option value="Mysłowice">Mysłowice</option>
+            <option value="Ostrowiec Świętokrzyski">Ostrowiec Świętokrzyski</option>
+            <option value="Suwałki">Suwałki</option>
+            <option value="Tarnowskie Góry">Tarnowskie Góry</option>
+            <option value="Stargard">Stargard</option>
+            <option value="Pabianice">Pabianice</option>
+            <option value="Racibórz">Racibórz</option>
+            <option value="Wejherowo">Wejherowo</option>
+            <option value="Świdnica">Świdnica</option>
+            <option value="Zamość">Zamość</option>
+            <option value="Siemianowice Śląskie">Siemianowice Śląskie</option>
+            <option value="Tomaszów Mazowiecki">Tomaszów Mazowiecki</option>
+            <option value="Pruszków">Pruszków</option>
+            <option value="Ełk">Ełk</option>
+            <option value="Łomża">Łomża</option>
+            <option value="Kutno">Kutno</option>
+            <option value="Leszno">Leszno</option>
+            <option value="Ostrów Wielkopolski">Ostrów Wielkopolski</option>
+            <option value="Piła">Piła</option>
+            <option value="Tczew">Tczew</option>
+            <option value="Bełchatów">Bełchatów</option>
+            <option value="Żory">Żory</option>
+            <option value="Świętochłowice">Świętochłowice</option>
+            <option value="Będzin">Będzin</option>
+            <option value="Zgierz">Zgierz</option>
+            <option value="Biała Podlaska">Biała Podlaska</option>
+            <option value="Chełm">Chełm</option>
+            <option value="Stalowa Wola">Stalowa Wola</option>
+            <option value="Skierniewice">Skierniewice</option>
+            <option value="Knurów">Knurów</option>
+            <option value="Legionowo">Legionowo</option>
+            <option value="Starachowice">Starachowice</option>
+            <option value="Kołobrzeg">Kołobrzeg</option>
+            <option value="Kędzierzyn-Koźle">Kędzierzyn-Koźle</option>
+            <option value="Nowa Sól">Nowa Sól</option>
+            <option value="Żary">Żary</option>
+            <option value="Otwock">Otwock</option>
+            <option value="Ostrołęka">Ostrołęka</option>
+            <option value="Rumia">Rumia</option>
+            <option value="Świnoujście">Świnoujście</option>
+            <option value="Zawiercie">Zawiercie</option>
+            <option value="Malbork">Malbork</option>
+            <option value="Cieszyn">Cieszyn</option>
+            <option value="Kwidzyn">Kwidzyn</option>
+            <option value="Dzierżoniów">Dzierżoniów</option>
+            <option value="Chojnice">Chojnice</option>
+            <option value="Bolesławiec">Bolesławiec</option>
+            <option value="Mińsk Mazowiecki">Mińsk Mazowiecki</option>
+            <option value="Sopot">Sopot</option>
+            <option value="Lubartów">Lubartów</option>
+            <option value="Gryfino">Gryfino</option>
+            <option value="Kąpiele Wielkie">Kąpiele Wielkie</option>
+        </select>
+    </header>
+    <main>
+        <div class="current-weather">
+            <div class="icon">
+                <img src="image_s.png" class="sun" alt="Sun Icon">
+            </div>
+            <div class="weather-details">
+                <h1 class="title">Wyszukaj lokalizację</h1>
+                <p class="temperatures">...</p>
+                <p class="description">Słonecznie</p>
+                <p class="summary">
+                    lorem
+                </p>
+            </div>
+            <div class="additional-info">
+                <div class="info">
+                    <p>2 km/h</p>
+                    <p>Wiatr</p>
+                </div>
+                <div class="info">
+                    <p class="humidity">...</p>
+                </div>
+                <div class="info">
+                    <p>1013 hPa</p>
+                    <p>Ciśnienie</p>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <h2>Najbliższe dni</h2>
+            <div class="day">
+                <p>Wt</p>
+                <img src="image_c.png" alt="cloud" class="cloud">
+                <p>Pochmurno</p>
+                <div class="temp">
+                    <span>17°C</span>
+                    <span>24°C</span>
+                </div>
+            </div>
+            <div class="day">
+                <p>Śr</p>
+                <img src="image_r.png" alt="rain" class="rain">
+                <p>Deszcz</p>
+                <div class="temp">
+                    <span>17°C</span>
+                    <span>24°C</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
