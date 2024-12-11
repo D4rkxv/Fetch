@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    overflow-y: hidden;
+    color: #ffffff;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.current-weather {
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.sun {
+    width: 50%;
+    margin-bottom: 10px;
+}
+.weather-details h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.rain{
+    width: 25%;
+}
+.cloud{
+    width: 25%;
+}
+.cloudsun{
+    width: 15%;
+}
+.cloudys{
+    width: 20%;
+}
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.description {
+    font-size: 18px;
+    color: #9bb1c8;
+    margin-bottom: 10px;
+}
+.deszcz, .snieg, .zachmurzenie{
+    padding: 10px;
+    
+}
+.summary {
+    font-size: 14px;
+    color: #bfcbd9;
+}
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.info {
+    margin: 0;
+    text-align: center;
+}
+.forecast {
+    margin-top: 20px;
+}
+.forecast h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.day {
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    background-color: #1b263b;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.temp {
+    display: flex;
+    gap: 10px;
+}
+
+.temp span {
+    font-size: 16px;
+}
